@@ -255,6 +255,45 @@ body {
   color: #eee;
 }
 
+@keyframes blink {
+    0% { color: rgba(136,130,130,.6); }
+    50% { color: rgba(136,130,130,.1); }
+    100% { color: rgba(136,130,130,.6); }
+}
+@-moz-keyframes blink {
+    0% { color: rgba(136,130,130,.6); }
+    50% { color: rgba(136,130,130,.1); }
+    100% { color: rgba(136,130,130,.6); }
+}
+@-webkit-keyframes blink {
+    0% { color: rgba(136,130,130,.6); }
+    50% { color: rgba(136,130,130,.1); }
+    100% { color: rgba(136,130,130,.6); }
+}
+@-o-keyframes blink {
+    0% { color: rgba(136,130,130,.6); }
+    50% { color: rgba(136,130,130,.1); }
+    100% { color: rgba(136,130,130,.6); }
+}
+
+#subtitle{
+  overflow: hidden;
+  width: 260px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -75px;
+  margin-top: 60px;
+  z-index: 999999999;
+  font-family: 'Squada One', cursive;
+  font-size: 18px;
+  color: rgba(136,130,130,.6);
+  animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite;
+  -o-animation: blink 1s infinite;
+}
+
 #controlbox {
   position: fixed;
   background-color: #aaa;
